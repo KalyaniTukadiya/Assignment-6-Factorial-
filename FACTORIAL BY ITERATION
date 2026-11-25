@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, fact, i;
+
+    printf("Enter any number: ");
+    scanf("%d", &n);
+
+    fact = 1;
+    // Changed 'i = 01' to 'i = 1' for standard formatting
+    for (i = 1; i <= n; i++) {
+        fact = fact * i; // Added the missing semicolon (;) here
+    }
+
+    printf("Factorial of Entered Number: %d\n", fact);
+
+    return 0;
+}
